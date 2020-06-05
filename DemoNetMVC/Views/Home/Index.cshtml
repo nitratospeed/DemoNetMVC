@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+    <div>
+        <a class="btn btn-info" tabindex="-1" role="button" aria-disabled="true" asp-area="" asp-controller="Home" asp-action="Create">Nuevo Usuario</a>
+    </div>
+    <hr />
+    <div class="table-responsive">
+        <table class="table table-hover" id="lista-usuarios">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Id</th>
+                    <th>Nombres</th>
+                    <th>Edad</th>
+                    <th>Ocupacion</th>
+                    <th>Celular</th>
+                    <th>Direccion</th>
+                    <th>Activo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+@section scripts
+{
+    <script src="~/js/homeIndex.js"></script>
+}
